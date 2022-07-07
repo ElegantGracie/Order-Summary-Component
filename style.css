@@ -1,0 +1,114 @@
+body {
+    padding: 60px 20px;
+    background: url(images/pattern-background-mobile.svg) no-repeat center fixed;
+    background-size: cover;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.main {
+    background-color: white;
+    border-radius: 20px;
+}
+.image {
+    width: 100%;
+}
+.image img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.content {
+    text-align: center;
+    padding: 15px 20px;
+}
+.content h1 {
+    font-size: larger;
+}
+.content p {
+    font-size: 16px;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+.light {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.icon-text {
+    display: flex;
+    justify-content: space-between;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+}
+.icon img {
+    width: 100%; 
+}
+.light-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.light-text span:first-child {
+    font-weight: bold;
+}
+.light-text span:last-child {
+    color: hsl(224, 23%, 55%);
+}
+.light-link {
+    margin-top: 15px;
+}
+.light-link a {
+    text-align: center;
+}
+.light-link a:hover {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+.dark {
+    background-color: hsl(245, 75%, 52%);
+    margin: 20px auto;
+    padding: 1px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 5px hsl(225, 100%, 94%);
+}
+.dark:hover {
+    background-color: hsl(228, 45%, 44%);
+}
+.dark p {
+    color: white;
+}
+.hover:hover {
+    color: black;
+    font-weight: bold;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and(min-width: 600px) {
+    body {
+        background: url(images/pattern-background-desktop.svg) no-repeat center fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main {
+        width: 400px;
+        margin-top: 200px;
+        box-shadow: 0px 15px 3px hsl(225, 100%, 95%);
+    }
+}
+
+@media screen and(min-width: 992px){
+    .main {
+        margin-top: 0px;
+    }
+}
